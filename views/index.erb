@@ -1,0 +1,33 @@
+<h1 class = "ajoutez">Ajoutez une tâche :</h1>
+<form action="/" method="post" accept-charset="utf-8">
+     <input type="text" name="taches[importance]" placeholder="Importance :">
+     <input type="text" name="taches[nom]" placeholder="Nom :">
+     <textarea name="taches[description]" placeholder="Description :"></textarea>
+     <input type="submit" value="Poster">
+</form>
+<% @tache.reverse.each do |taches| %>
+	<div class="cadre">
+	           <h1 class="nom">Nom : <%= taches.nom %></h1>
+	           <h2 class="importance">Importance : <%= taches.importance %></h2>
+	           <h3 class="description">Description : <%= taches.description %></h3>
+	           <div class="date">posté le: <%= taches.created_at %></div>
+	           <div class="date">édité le: <%= taches.updated_at %></div>
+	           <div class="supprimer">
+                         <form action="/<%= taches.id %>" method= "post">
+	                    <input type="submit" value="Supprimer">
+	                    <input type="hidden" name="_method" value="delete">
+                         </form>
+	           </div>
+	           <div class="editer">
+	                <form action="/<%= taches.id %>" method= "get">
+	                      <input type="submit" value="Editer">
+	                </form>
+	           </div>
+	</div>
+<% end %>
+<!-- <form action="/" method="post" accept-charset="utf-8">
+     <input type="text" name="taches[importance]" placeholder="Importance :">
+     <input type="text" name="taches[nom]" placeholder="Nom :">
+     <textarea name="taches[description]" placeholder="Description :"></textarea>
+     <input type="submit" value="Poster">
+</form> -->
