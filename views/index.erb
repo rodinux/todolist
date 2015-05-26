@@ -2,8 +2,8 @@
 <form action="/" method="post" accept-charset="utf-8">
      <input type="text" name="taches[importance]" placeholder="Importance :">
      <input type="text" name="taches[nom]" placeholder="Nom :">
-     <textarea name="taches[description]" placeholder="Description :"></textarea>
-     <input type="submit" value="Poster">
+     <textarea name="taches[description]" rows="10" cols="50" placeholder="Description :"></textarea>
+     <input type="submit" value="Enregistrer">
 </form>
 <% @tache.reverse.each do |taches| %>
 	<div class="cadre">
@@ -25,9 +25,3 @@
 	           </div>
 	</div>
 <% end %>
-<!-- <form action="/" method="post" accept-charset="utf-8">
-     <input type="text" name="taches[importance]" placeholder="Importance :">
-     <input type="text" name="taches[nom]" placeholder="Nom :">
-     <textarea name="taches[description]" placeholder="Description :"></textarea>
-     <input type="submit" value="Poster">
-</form> -->
