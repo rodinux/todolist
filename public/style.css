@@ -15,6 +15,7 @@
           box-sizing: border-box;
 }
 h1{
+    text-align: center;
     font-family : Dayrom, Verdana, sans-font;
     font-size: 5em;
 }
@@ -26,7 +27,6 @@ div {
     display: flex;
     justify-content: center;
     font-size: 2em;
-    /*margin: auto;*/
     background-color: red;
     width: 35%;
     height: 35%;
@@ -36,18 +36,16 @@ div {
     display: flex;
     justify-content: center;
     font-size: 2em;
-    /*margin: auto;*/
     background-color: green;
     width: 40%;
     height: 40%;
     border-radius: 10px 10px;
-
 }
 .importance{
     display: flex;
     justify-content: center;
+    font-family : Dayrom, Verdana, sans-font;
     font-size: 1,5em;
-    /*margin: auto;*/
     background-color: yellow;
     width: 30%;
     height: 30%;
@@ -56,6 +54,7 @@ div {
 .description{
     display: flex;
     font-size: 1em;
+    font-family: Verdana, sans-font;
     margin: auto;
     background-color: aqua;
     width: 50%;
