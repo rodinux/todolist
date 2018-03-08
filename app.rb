@@ -6,13 +6,13 @@ ActiveRecord::Base.establish_connection(
            :database => "base.db",
            )
 
-ActiveRecord::Base.default_timezone= :local
+#ActiveRecord::Base.default_timezone= :local
 
 class Tache < ActiveRecord::Base
 end
 
 get '/'  do
-	@tache = Tache.all.order("created_at DESC")
+	@tache = Tache.all.order("created_at ASC")
 	@title ="Tache"
 	erb :index
 end
