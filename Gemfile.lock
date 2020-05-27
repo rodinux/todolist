@@ -45,7 +45,7 @@ DEPENDENCIES
   sqlite3
 
 RUBY VERSION
-   ruby 2.4.1p111
+   ruby 2.6.5p114
 
 BUNDLED WITH
-   1.17.1
+   2.1.4
